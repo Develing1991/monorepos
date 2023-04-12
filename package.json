@@ -1,0 +1,24 @@
+{
+  "name": "@Develing1991/root",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "find ./ -name node_modules -type d -exec rm -rf {} +",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "main:start": "pnpm -F @Develing1991/main run start",
+    "second:start": "pnpm -F @Develing1991/second run start",
+    "start": "pnpm -r run start",
+    "all:update": "pnpm -r update -i -L"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=16.14.0",
+    "pnpm": ">=8.2.0"
+  },
+  "dependencies": {
+    "just-kebab-case": "^4.2.0"
+  }
+}
